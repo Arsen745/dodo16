@@ -67,6 +67,9 @@ const modal = document.querySelector('.modal')
 const btnClose = document.querySelector('.icon')
 const btnTema = document.querySelector('.btnTema')
 
+const pzName = document.querySelector('.pz-name')
+const desc_pizza = document.querySelector('.desc-pizza')
+
 
 
 
@@ -87,19 +90,16 @@ function openModal(idx) {
 }
 
 addTocartbtn.addEventListener('click', () => {
-    const pizza = dataPizza[index - 1]
+    
+    const pizza = dataPizza
     console.log(pizza);
     cart.push(pizza)
     cartCount.innerText = `| ${cart.length}`
-    for (const pizza1 of cart) {
-        index++
-        listModal.innerHTML += `
-        <div class="card">
-             <h5>${pizza1.pizzaName}</h5>
-             <p>${pizza1.descriptipn}</p>
-        </div>
-        `
-    }
+    let i = 1
+     i++
+    pzName.innerText = dataPizza[i].pizzaName
+    desc_pizza.innerText = 'arsen'
+
 })
 
 cartCount2.addEventListener('click', () => {

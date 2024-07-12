@@ -172,33 +172,11 @@ button {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
     .list {
         flex-direction: column;
-        justify-content: center;
+        column-gap: 50px;
         align-items: center;
-    }
-    .cart-modal {
-        display: none;
-    }
-
-    .cart-list {
-        width: 90%;
-    }
-    .modal {
-        width: 100%;
-
-        .icon i {
-            top: 190px;
-            left: 370px;
-        }
-    }
-    .content-modal {
-        flex-direction: column;
-        width: 100%;
-    }
-    .header-btn {
-        width: 100%;
     }
 
 }
